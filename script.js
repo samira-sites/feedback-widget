@@ -27,7 +27,7 @@ stars.forEach(star => {
 
 // Fetch and display live average rating
 function updateAvgRating() {
-  fetch("https://script.google.com/macros/s/AKfycbwz5CxvKNxfMF9udoL7SiXJvGKxM6rL60szd1jv6PCso_vKSo5nigUdqwb9ouxUqrR1HA/exec")
+  fetch("https://script.google.com/macros/s/AKfycbzU1GyxPLm9t69fEtOIX0p2JuyLpPUHyBgbO296ocDKCRlFipU43vEPjzxHhZPKFYE1PQ/exec")
     .then(res => res.json())
     .then(data => avgRatingEl.innerText = data.average)
     .catch(err => console.error("Avg Rating fetch error:", err));
@@ -53,7 +53,7 @@ submitBtn.addEventListener("click", () => {
     timestamp: new Date().toISOString()
   };
 
-  fetch("https://script.google.com/macros/s/AKfycbyXNUn1AeCgexeounQJN11gqc_BqUTnfHKJMuXCuL6zaN5SducXIIMFWKa7RI7urf7KYQ/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbzU1GyxPLm9t69fEtOIX0p2JuyLpPUHyBgbO296ocDKCRlFipU43vEPjzxHhZPKFYE1PQ/exec", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {"Content-Type": "application/json"}
