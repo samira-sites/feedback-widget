@@ -27,7 +27,7 @@ stars.forEach(star => {
 
 // Fetch and display live average rating
 function updateAvgRating() {
-  fetch("YOUR_GOOGLE_SCRIPT_URL")
+  fetch("https://script.google.com/macros/s/AKfycbwz5CxvKNxfMF9udoL7SiXJvGKxM6rL60szd1jv6PCso_vKSo5nigUdqwb9ouxUqrR1HA/exec")
     .then(res => res.json())
     .then(data => avgRatingEl.innerText = data.average)
     .catch(err => console.error("Avg Rating fetch error:", err));
