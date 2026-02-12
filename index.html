@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Small Business Feedback Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Bring Your Vision to Life Online</h1>
+    <p>Grow your business with fast, responsive websites featuring online booking, contact forms, and SEO-friendly structure.</p>
+    <button class="cta-btn">Get Your Website</button>
+    <button class="cta-btn secondary">Book a Free Discovery Call</button>
+  </section>
+
+  <!-- Live Average Rating -->
+  <div class="live-rating">
+    ⭐ Average Rating: <span id="avgRating">–</span>/5
+  </div>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <h2>Client Testimonials</h2>
+    <!-- New testimonials appear here -->
+  </section>
+
+  <!-- Floating Feedback Button -->
+  <button id="feedbackBtn" class="feedback-btn">Share Feedback</button>
+
+  <!-- Feedback Modal -->
+  <div id="feedbackModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Help Us Improve Your Experience</h2>
+      <p>Your feedback helps us build better websites for growing businesses.</p>
+
+      <!-- Name Field -->
+      <input type="text" id="name" class="input-field" placeholder="Your Name (optional)" />
+
+      <!-- Star Rating -->
+      <div class="stars" id="starContainer">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+
+      <!-- Recommendation -->
+      <div class="recommendation">
+        <p class="recommend-text">Would you recommend our service?</p>
+        <label><input type="radio" name="recommend" value="Yes"> Yes</label>
+        <label><input type="radio" name="recommend" value="Maybe"> Maybe</label>
+        <label><input type="radio" name="recommend" value="No"> No</label>
+      </div>
+
+      <!-- Comment -->
+      <textarea id="comment" class="input-field" placeholder="Optional comment..."></textarea>
+
+      <!-- Submit -->
+      <button id="submitFeedback" class="submit-btn">Send Feedback</button>
+
+      <!-- Thank You Message -->
+      <div id="thankYouMessage" class="thank-you hidden">
+        ✓ Thank you for your feedback!
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
